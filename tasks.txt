@@ -1,0 +1,13 @@
+-make the tickets bought header cell link to the holders page for the round's token contract
+-make any address shown anywhere link to the bscscan page for that address
+-make the "last buy" time cell link to the buy tx on bscscan
+-make cooldown page show game settings for the next round
+-show toasts for when tickets are bought
+-maybe make cool animation of top buyers cells changing places when the order changes
+-listen for updates to settings events and update any UI relying on those contract settings (ie, price to buy ticket for next round)
+-make component that shows users what their bonus % will be for various token amounts bought
+-fix issue with it showing "BUY -1" is top buyers table for rows below where you are
+-implement referrals: detect "ref" param in url and store in local storage (if not already storing something else) if it's a valid bep-20 address. when buying tickets, pass that as 2nd param to "buyExactTickets"
+-make default gwei higher for buying tickets in last 30 seconds (ie, when under 30 seconds, if round pot is 100 bnb, use normal amount of 11 gwei. when round pot is 1000 bnb, use 101 gwei, etc., 5000 bnb, 501 gwei, etc.). Maybe only do this if you detect the preivous block was filled with very high gwei. If previous block was filled with all 200 gwei+, then use at least 200 * 20%, 240 gwei to make sure tx is mined.
+-create component that shows buy history
+-show lottery winners on game over / cooldown screen
