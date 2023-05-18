@@ -1,4 +1,4 @@
-#MRS DOGE
+# MRS DOGE Lottery dApp on binance smart chain
 
 ![Screenshot of Mrs Doge App](https://github.com/Txchain-Labs/Mrsdoge-app/blob/main/mrsdoge.png)
 
